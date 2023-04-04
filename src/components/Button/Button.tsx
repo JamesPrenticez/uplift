@@ -1,16 +1,50 @@
-import React, {type ReactNode} from "react"
-import "./Button.css"
+import React, {type ReactNode, type ReactElement} from "react"
+import { twMerge } from "tailwind-merge";
+import "../../styles/index.css"
 
 export interface ButtonProps {
-  label: string;
+  type?: "button" | "submit" | "reset";
+  name?: string;
+  className?: string;
+  disabled?: boolean;
   children?: ReactNode;
+  onClick?: () => void;
 }
 
-const Button = ({children, label}:ButtonProps) => {
+const Button = ({
+  type = "button",
+  name,
+  className,
+  disabled,
+  children,
+  onClick
+}: ButtonProps): ReactElement => {
+
+  const handleClick = () => {
+    if (disabled) return;
+    if (onClick) onClick();
+  };
+
   return (
-    <button>
-      {children ? children : label}
-    </button>
+		<button 
+      type={type}
+      name={name}
+			disabled={disabled}
+			className={twMerge(`
+      bg-black
+      hover:bg-opacity-80
+      text-white
+        text-center
+        p-2
+        rounded-md
+        select-none
+        cursor-pointer
+        ${className ?? ""}
+      `)}
+			onClick={handleClick}
+		>
+			{children ?? name}
+		</button>
   )
 }
 
