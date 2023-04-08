@@ -24,14 +24,31 @@ export const DefaultButton: Story = {
 export const RedButton: Story = {
   args: {
     name: "Red Button",
-    className: "bg-red-500 text-7xl text-red-900"
+    bgColor: "red",
+    children: <p>Red Button</p>,
   },
 };
 
-export const OnClickButton: Story = {
+export const BlueButton: Story = {
+  args: {
+    name: "Red Button",
+    bgColor: "blue",
+    children: <p>Blue Button</p>,
+  },
+};
+
+export const GreenButton: Story = {
+  args: {
+    name: "Green Button",
+    bgColor: "green",
+    children: <p>Green Button</p>,
+  },
+};
+
+export const CustomButton: Story = {
   args: {
     name: "OnClick",
-    className: "bg-purple-600 text-purple-700",
-    children: <p>Test</p>,
+    className: "bg-purple-500/20 hover:bg-purple-500/80 hover:text-white text-purple-900",
+    children: <p>Custom Button</p>,
   },
 };
