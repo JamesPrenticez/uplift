@@ -5,8 +5,8 @@ import Tooltip from './Tooltip';
 
 const meta: Meta<typeof Tooltip> = {
   title: 'Tooltip',
-  tags: ['autodocs'],
   component: Tooltip,
+  tags: ['autodocs'],
   parameters: {
     layout: 'centered',
   },
