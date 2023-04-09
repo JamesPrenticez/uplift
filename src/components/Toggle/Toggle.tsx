@@ -21,19 +21,18 @@ const Toggle = ({
   };
 
   return (
-
-      <label 
-        htmlFor="toggle" 
-        className="
-          relative
-          block
-          bg-gray-600
-          w-14
-          h-6
-          rounded-full
-          cursor-pointer
-        "
-      >
+    <label 
+      htmlFor="toggle" 
+      className="
+        relative
+        block
+        bg-gray-600
+        w-14
+        h-6
+        rounded-full
+        cursor-pointer
+      "
+    >
       <input 
         id="toggle"
         type="checkbox"
@@ -53,7 +52,7 @@ const Toggle = ({
           ${isChecked ? "bg-green-500 translate-x-full"  : "bg-blue-500" }
         `}
       />
-      </label>
+    </label>
   )
 }
 
