@@ -38,3 +38,6 @@ https://www.youtube.com/watch?v=ouncVBiye_M
 ### Twind is a god sent
 (Twind)[https://github.com/tw-in-js/twind]
 (Twind Docs)[https://twind.style/installation]
+
+### Target Children
+[&>p]:mt-0

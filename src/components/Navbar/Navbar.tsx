@@ -11,18 +11,10 @@ export default function Navbar(): ReactElement {
 
 
   return (
-    <header className='bg-theme-primary text-theme-secondary border-b border-theme-tertiary '>
+    <header className='bg-black text-white'>
       <nav className='hidden lg:flex w-full mx-auto items-center justify-between h-20 px-3 max-w-7xl'>
         <div className='flex items-center space-x-4 text-lg text-theme-secondary '>
-					{/* { currentLocation.pathname != '/' && */}
-						<div className='flex items-center select-none'>
-							<span className='mr-2'>
-								{/* <Cube width={50} height={50}/> */}
-							</span>
-							<span className='text-[2rem] font-medium hover:text-theme-quaternary select-none'>
-								{/* <NavLink to="/">DigiBill</NavLink> */}
-							</span>
-						</div>
+
 					{/* } */}
 					{pages.map((item, index) => (
             <></>
