@@ -4,4 +4,7 @@ import presetTailwind from '@twind/preset-tailwind'
 
 export default defineConfig({
   presets: [presetAutoprefix(), presetTailwind()],
+  rules: [
+  ['bg-burlywood', { backgroundColor: 'burlywood' }],
+],
 })
