@@ -2,15 +2,15 @@ import React, { type ReactElement, type SVGProps } from 'react'
 
 const MoonIcon = ({ 
   className,
-  height,
-  width,
+  height = 20,
+  width = 20,
   fill = "none",
-  stroke = "currentColor",
+  color = "currentColor",
   strokeWidth = 1.5,
   onClick
 }: SVGProps<SVGSVGElement>): ReactElement => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className={className} onClick={onClick} height={height} width={width} fill={fill} stroke={stroke} strokeWidth={strokeWidth}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className={className} onClick={onClick} height={height} width={width} fill={fill} stroke={color} strokeWidth={strokeWidth}>
       <path 
         strokeLinecap="round"
         strokeLinejoin="round"

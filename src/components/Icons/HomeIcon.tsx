@@ -2,8 +2,8 @@ import React, { type ReactElement, type SVGProps } from 'react'
 
 const HomeIcon = ({ 
   className,
-  height,
-  width,
+  height = 20,
+  width = 20,
   fill = "none",
   stroke = "currentColor",
   strokeWidth = 1.5,
